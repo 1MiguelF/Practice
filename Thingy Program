@@ -1,0 +1,30 @@
+public void setup()
+{
+  Thingy dude = new Thingy();
+  Thingy guy = new Thingy();
+  dude.setmyX(30);
+  dude.setmyY(30);
+  guy.setmyX(70);
+  guy.setmyY(70);
+  System.out.println("Distance between dude and guy is " + dist(dude.getmyX(), dude.getmyY(), guy.getmyX(), guy.getmyY()));
+}
+class Thingy
+{
+  private int myX, myY;
+  public Thingy()
+  {
+    myX = myY = 0;
+  }
+    public void setmyX(int x_){
+    myX = x_;
+  }
+  public void setmyY(int y_){
+    myY = y_;
+  }
+  public int getmyY() {
+    return myY;
+  }
+  public int getmyX() {
+    return myX;
+  }
+}
